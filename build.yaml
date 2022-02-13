@@ -18,3 +18,4 @@ include:
   - board: "nice_nano_v2"
     shield: "dumbpad"
     cmake-args: "-DKEYMAP_FILE=${GITHUB_WORKSPACE}/config/boards/shields/dumbpad/dumbpad_oled_top.keymap"
+    keymap-name: "oled_top"

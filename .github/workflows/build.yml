@@ -34,7 +34,11 @@ jobs:
         run: |
           if [ -n "${{ matrix.shield }}" ]; then
             EXTRA_CMAKE_ARGS="-DSHIELD=${{ matrix.shield }}"
-            ARTIFACT_NAME="${{ matrix.shield }}-${{ matrix.board }}-zmk"
+            if [ -n "${{ matrix.keymap-name }}" ]; then
+              ARTIFACT_NAME="${{ matrix.shield }}-${{ matrix.keymap-name }}-${{ matrix.board }}-zmk"
+            else
+              ARTIFACT_NAME="${{ matrix.shield }}-${{ matrix.board }}-zmk"
+            fi
             DISPLAY_NAME="${{ matrix.shield }} - ${{ matrix.board }}"
           else
             EXTRA_CMAKE_ARGS=

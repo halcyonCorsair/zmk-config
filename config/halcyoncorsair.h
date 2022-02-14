@@ -8,7 +8,7 @@
 #define SYM_BCK _SYMB BACKSPACE
 
 #define NAV_BCK _NAVI BACKSPACE
-#define SYM_ENT _NAVI ENTER
+#define SYM_ENT _SYMB ENTER
 
 #define X_SELA      LG(A)
 #define X_UNDO      LG(Z)
@@ -27,12 +27,12 @@
 #define X_I LALT    I
 #define X_O RCTRL   O
 
-#define X_DLR LCTRL     A
-#define X_PLUS LALT     R
-#define X_LPRN LGUI     S
-#define X_RPRN LSHFT    T
+#define X_DLLR LCTRL    DLLR
+#define X_PLUS LALT     PLUS
+#define X_LPAR LGUI     LPAR
+#define X_RPAR LSHFT    RPAR
 
-#define X_MINUS RSHFT   N
-#define X_EQUAL RGUI    E
-#define X_UNDER LALT    I
-#define X_ASTRK RCTRL   O
+#define X_MINUS RSHFT   MINUS
+#define X_EQUAL RGUI    EQUAL
+#define X_UNDER LALT    UNDER
+#define X_ASTRK RCTRL   ASTRK

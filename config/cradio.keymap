@@ -64,7 +64,7 @@
         symbol_layer {
                         bindings = <
     &kp N4      &kp N3      &kp N2      &kp N1      &kp N5              &kp N9       &kp N0      &kp N6      &kp N7      &kp N8
-    &kp X_DLR   &kp X_PLUS  &kp X_LPRN  &kp X_RPRN  &kp BSLH            &kp PIPE     &kp X_MINUS &kp X_EQUAL &kp X_UNDER &kp X_ASTRK
+    &hm X_DLLR  &hm X_PLUS  &hm X_LPAR  &hm X_RPAR  &kp BSLH            &kp PIPE     &hm X_MINUS &hm X_EQUAL &hm X_UNDER &hm X_ASTRK
     &kp EXCL    &kp SQT     &kp LBRC    &kp RBRC    &kp TILDE           &kp AMPS     &kp LBKT    &kp RBKT    &kp PERCENT &kp CARET
                                         &trans      &trans              &trans       &trans
                         >;

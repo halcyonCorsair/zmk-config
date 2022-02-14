@@ -51,8 +51,8 @@ compatible = "zmk,combos";
 // COMBO(coln, &kp COLON, 18 28, 30, _BASE)
 // COMBO(bsls, &kp BSLH, 9 19, 30, _BASE)
 // COMBO(pipe, &kp PIPE, 19 29, 30, _BASE)
-// 
-// /* System */
+
+/* System */
 COMBO(esc, &kp ESC, 4 5, 80, _BASE)
 COMBO(del, &kp DELETE, 24 25, 80, _BASE)
 COMBO(caps, &kp CAPS, 14 15, 80, _BASE)

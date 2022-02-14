@@ -14,11 +14,11 @@
 #define X_PAST      LC(V)
 #define X_REDO      LC(Y)
 
-#define X_A LGUI    A
+#define X_A LCTRL   A
 #define X_R LALT    R
-#define X_S LCTRL   S
+#define X_S LGUI    S
 #define X_T LSHFT   T
 #define X_N RSHFT   N
-#define X_E RCTRL   E
+#define X_E RGUI    E
 #define X_I LALT    I
-#define X_O RGUI    O
+#define X_O RCTRL   O

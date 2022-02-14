@@ -53,8 +53,8 @@ compatible = "zmk,combos";
 // COMBO(pipe, &kp PIPE, 19 29, 30, _BASE)
 // 
 // /* System */
-// COMBO(login, &kp LC(LA(DEL)), 0 10 20, 50, _BASE)
-// COMBO(esc, &kp ESC, 4 5, 80, _BASE)
-// COMBO(del, &kp DELETE, 14 15, 80, _BASE)
-// COMBO(caps, &kp CAPS, 24 25, 80, _BASE)
-// COMBO(syst, &sl _SYST, 20 29, 50, _BASE _SYST)
+COMBO(esc, &kp ESC, 4 5, 80, _BASE)
+COMBO(del, &kp DELETE, 24 25, 80, _BASE)
+COMBO(caps, &kp CAPS, 14 15, 80, _BASE)
+COMBO(capswrd, &caps_word, 13 16, 80, _BASE)
+COMBO(syst, &sl _SYST, 20 29, 50, _BASE _SYST)

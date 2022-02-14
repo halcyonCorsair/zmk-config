@@ -14,8 +14,6 @@
 ---
 include:
   - board: "nice_nano_v2"
-    shield: "eternal_keypad"
+    shield: "cradio_left"
   - board: "nice_nano_v2"
-    shield: "eternal_keypad"
-    cmake-args: "-DKEYMAP_FILE=${GITHUB_WORKSPACE}/config/boards/shields/eternal_keypad/eternal_keypad_lefty.keymap"
-    keymap-name: "lefty"
+    shield: "cradio_right"

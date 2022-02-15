@@ -58,7 +58,7 @@
     &kp Q       &kp W       &kp F       &kp P       &kp B              &kp J       &kp L       &kp U       &kp Y       &kp SEMI
     &hm X_A     &hm X_R     &hm X_S     &hm X_T     &kp G              &kp M       &hm X_N     &hm X_E     &hm X_I     &hm X_O
     &kp Z       &kp X       &kp C       &kp D       &kp V              &kp K       &kp H       &kp COMMA   &kp DOT     &kp FSLH
-                                        &lt NAV_BCK &kp SPACE          &kp BSPC    &lt SYM_ENT
+                                        &lt NAV_SPC &kp BSPC           &ss LSHIFT LSHIFT &lt SYM_ENT
                         >;
                 };
         symbol_layer {

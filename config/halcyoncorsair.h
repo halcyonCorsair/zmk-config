@@ -5,6 +5,7 @@
 #define _SYST 4
 
 #define NAV_ENT _NAVI ENTER
+#define NAV_SPC _NAVI SPACE
 #define SYM_BCK _SYMB BACKSPACE
 
 #define NAV_BCK _NAVI BACKSPACE

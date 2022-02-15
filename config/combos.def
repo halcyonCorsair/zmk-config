@@ -43,7 +43,7 @@ COMBO(pipe, &kp PIPE, 16 26, 30, _BASE)
 
 COMBO(grav, &kp GRAVE, 22 13, 30, _BASE)
 COMBO(tild, &kp TILDE, 11 22, 30, _BASE)
-COMBO(excl, &kp EXCL, 1 2 17 18, 50, _BASE)
+COMBO(excl, &kp EXCL, 1 2 17 18, 80, _BASE)
 COMBO(qstn, &kp QMARK, 11 12 7 8, 50, _BASE)
 COMBO(ampr, &kp AMPS, 2 13, 30, _BASE)
 COMBO(at,   &kp AT, 1 2, 30, _BASE)
@@ -52,8 +52,6 @@ COMBO(hash, &kp HASH, 2 3, 30, _BASE)
 COMBO(perc, &kp PRCNT, 26 18, 30, _BASE)
 COMBO(crt,  &kp CARET, 12 23, 30, _BASE)
 COMBO(dllr, &kp DLLR, 11 23, 30, _BASE)
-
-COMBO(entr, &kp ENTER, 13 24, 30, _BASE)
 
 /* Numbers */
 COMBO(n0, &kp N0, 31 15, 30, _BASE)
@@ -67,7 +65,11 @@ COMBO(n7, &kp N7, 31 6, 30, _BASE)
 COMBO(n8, &kp N8, 31 7, 30, _BASE)
 COMBO(n9, &kp N9, 31 8, 30, _BASE)
 
-// /* Editing */
+/* Editing */
+COMBO(cut, &kp LG(X), 2 3, 30, _BASE)
+COMBO(copy, &kp LG(C), 26 18, 30, _BASE)
+COMBO(paste,  &kp LG(V), 12 23, 30, _BASE)
+COMBO(ptxt, &kp LG(LS(V)), 11 23, 30, _BASE)
 // COMBO(tab, &kp TAB, 11 12 13, 50, _BASE)
 // COMBO(stab, &kp LS(TAB), 16 17 18, 50, _BASE)
 // COMBO(hme, &kp HOME, 1 2 3, 50, _BASE)
@@ -76,6 +78,7 @@ COMBO(n9, &kp N9, 31 8, 30, _BASE)
 // COMBO(grgt, &kp LG(RIGHT), 26 27 28, 50, _BASE)
 
 /* System */
+COMBO(entr, &kp ENTER, 13 24, 30, _BASE)
 COMBO(esc, &kp ESC, 4 5, 80, _BASE)
 COMBO(del, &kp DELETE, 24 25, 80, _BASE)
 COMBO(caps, &kp CAPS, 14 15, 80, _BASE)

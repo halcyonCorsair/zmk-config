@@ -27,8 +27,8 @@ COMBO(rpar, &kp RPAR, 16 8, 30, _BASE _SYMB)
 COMBO(lang, &kp LT, 16 7, 30, _BASE _SYMB)
 COMBO(rang, &kp GT, 7 18, 30, _BASE _SYMB)
 
-COMBO(hmlpar, &kp LPAR, 11 12, 30, _BASE _SYMB)
-COMBO(hmrpar, &kp RPAR, 17 18, 30, _BASE _SYMB)
+//COMBO(hmlpar, &kp LPAR, 11 12, 30, _BASE _SYMB)
+//COMBO(hmrpar, &kp RPAR, 17 18, 50, _BASE _SYMB)
 
 /* Symbols */
 COMBO(mins, &kp MINUS, 27 28, 30, _BASE)

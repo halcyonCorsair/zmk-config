@@ -11,7 +11,7 @@
 #include "halcyoncorsair.h"
 
 &lt {
-    tapping-term-ms = <150>;
+    tapping-term-ms = <250>;
     flavor = "tap-preferred";
 };
 

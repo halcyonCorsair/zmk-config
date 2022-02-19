@@ -15,6 +15,10 @@
     flavor = "tap-preferred";
 };
 
+&mt {
+    tapping-term-ms = <200>;
+};
+
 &sk {
      release-after-ms = <1000>;
      quick-release;
@@ -26,12 +30,21 @@
 
 / {
     behaviors {
+        bhm: balanced_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
             tapping-term-ms = <150>;
-            quick_tap_ms = <0>;
+            quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -40,7 +53,7 @@
             label = "STICKY_SHIFT";
             #binding-cells = <2>;
             tapping-term-ms = <150>;
-            quick_tap_ms = <0>;
+            quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&sk>;
         };

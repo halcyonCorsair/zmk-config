@@ -28,6 +28,10 @@
     /delete-property/ quick-release;
 };
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS PIPE>; // BSPC
+};
+
 / {
     behaviors {
         bhm: balanced_homerow_mods {

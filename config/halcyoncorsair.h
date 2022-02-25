@@ -30,6 +30,7 @@
 
 #define X_DLLR LCTRL    DLLR
 #define X_PLUS LALT     PLUS
+#define X_SQT  LALT     SQT
 #define X_LPAR LGUI     LPAR
 #define X_RPAR LSHFT    RPAR
 

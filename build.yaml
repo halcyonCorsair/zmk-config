@@ -15,8 +15,12 @@
 include:
   - board: "nice_nano_v2"
     shield: "kyria_rev2_left"
+    cmake-args: "-DKEYMAP_FILE=${GITHUB_WORKSPACE}/config/kyria_rev2.keymap"
+    keymap-name: "rev2_left"
   - board: "nice_nano_v2"
     shield: "kyria_rev2_right"
+    cmake-args: "-DKEYMAP_FILE=${GITHUB_WORKSPACE}/config/kyria_rev2.keymap"
+    keymap-name: "rev2_right"
   # - board: "nice_nano_v2"
   #   shield: "cradio_left"
   # - board: "nice_nano_v2"

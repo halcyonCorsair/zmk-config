@@ -64,9 +64,9 @@
         };
     };
 
-    // combos {
-    //     #include "kyria_combos.def"
-    // };
+    combos {
+        #include "kyria_combos.def"
+    };
 
 	keymap {
 		compatible = "zmk,keymap";

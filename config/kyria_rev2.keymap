@@ -82,11 +82,11 @@
             bindings = <
     &kp TAB    &kp Q       &kp W       &kp F       &kp P              &kp B                                                                    &kp J       &kp L       &kp U           &kp Y         &kp SEMI       &kp BSLH
     &kp ESC    &hm X_A     &hm X_R     &hm X_S     &hm X_T            &kp G                                                                    &kp M       &hm X_N     &hm X_E         &hm X_I       &hm X_O        &kp SQT
-    &kp LSHFT  &kp Z       &kp X       &kp C       &kp D              &kp V      &kp LG(SPACE) &ss LSHIFT LSHIFT	&kp LA(RG(BSLH)) &mo _SYST &kp K       &kp H       &kp COMMA       &kp DOT       &kp FSLH       &kp RCTRL
-                                       &mo _SYST   &kp LC(LA(LSHFT))  &mo _NAVI  &kp SPC       &kp BSPC             &kp TAB       &kp ENTER    &mo _SYMB   &key_repeat &kp C_PLAY_PAUSE
+    &kp LSHFT  &kp Z       &kp X       &kp C       &kp D              &kp V        &kp LG(SPACE) &ss LSHIFT LSHIFT	&kp LA(RG(BSLH)) &mo _SYST &kp K       &kp H       &kp COMMA       &kp DOT       &kp FSLH       &kp RCTRL
+                                       &mo _SYST   &kp LC(LA(LSHFT))  &mo _NAVI  &kp SPC       &kp BSPC           &kp TAB       &kp ENTER    &mo _SYMB   &key_repeat &kp C_PLAY_PAUSE
             >;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
 		};
         symbol_layer {
             bindings = <
@@ -96,7 +96,7 @@
                                        &trans      &trans      &tog _NAVI  &trans  &trans                           &trans        &trans       &trans       &trans      &trans
             >;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
 		};
         nav_layer {
             bindings = <
@@ -106,7 +106,7 @@
                                        &trans      &trans      &trans      &trans  &trans                           &trans        &trans        &tog _SYMB  &trans       &trans
             >;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
 		};
         function_layer {
             bindings = <
@@ -116,7 +116,7 @@
                                        &trans      &trans      &trans     &trans  &trans                            &trans        &trans        &trans      &trans        &trans
             >;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
                 };
         system_layer {
             bindings = <
@@ -126,7 +126,7 @@
                                            &trans          &trans          &trans      &trans  &trans               &kp C_BRI_UP  &kp C_BRI_DN  &trans      &trans        &trans
              >;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
 		};
 	};
 };

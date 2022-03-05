@@ -73,7 +73,7 @@
 
         base_layer {
                         bindings = <
-    &kp Q       &kp W       &kp F       &kp P       &kp B              &kp J       &kp L       &kp U       &kp Y       &kp SEMI
+    &kp Q       &kp W       &kp F       &kp P       &kp B              &kp J       &kp L       &kp U       &kp Y       &kp SQT
     &hm X_A     &hm X_R     &hm X_S     &hm X_T     &kp G              &kp M       &hm X_N     &hm X_E     &hm X_I     &hm X_O
     &kp Z       &kp X       &kp C       &kp D       &kp V              &kp K       &kp H       &kp COMMA   &kp DOT     &kp FSLH
                                         &lt NAV_SPC &kp BSPC           &ss LSHIFT LSHIFT &lt SYM_ENT
@@ -82,8 +82,8 @@
         symbol_layer {
                         bindings = <
     &kp N4      &kp N3      &kp N2      &kp N1      &kp N5              &kp N9       &kp N0      &kp N6      &kp N7      &kp N8
-    &hm X_DLLR  &hm X_SQT   &hm X_LPAR  &hm X_RPAR  &kp BSLH            &kp PIPE     &hm X_MINUS &hm X_EQUAL &hm X_UNDER &hm X_ASTRK
-    &kp EXCL    &kp DQT     &kp LBRC    &kp RBRC    &kp TILDE           &kp AMPS     &kp LBKT    &kp RBKT    &kp PERCENT &kp CARET
+    &hm X_DLLR  &hm X_PLUS  &hm X_LPAR  &hm X_RPAR  &kp BSLH            &kp PIPE     &hm X_MINUS &hm X_EQUAL &hm X_UNDER &hm X_ASTRK
+    &kp EXCL    &kp SEMI    &kp LBRC    &kp RBRC    &kp TILDE           &kp AMPS     &kp LBKT    &kp RBKT    &kp PERCENT &kp CARET
                                         &tog _NAVI  &trans              &trans       &trans
                         >;
     // available due to combo: +, -, @, [, ]

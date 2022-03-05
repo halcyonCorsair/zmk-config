@@ -74,7 +74,7 @@ COMBO(ptxt,  &kp LG(LS(V)), 23 24, 30, _BASE)
 // COMBO(end, &kp END,         x  y, 50, _BASE)
 
 /* System */
-COMBO(entr,     &kp ENTER,  13 14, 30, _BASE)
+COMBO(entr,     &kp ENTER,  13 24, 30, _BASE)
 // COMBO(tab, &kp TAB,         11 12 13, 80, _BASE)
 COMBO(tab,      &kp TAB,     0  1, 50, _BASE)
 COMBO(esc,      &kp ESC,     4  5, 50, _BASE)

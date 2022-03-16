@@ -11,6 +11,10 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include "halcyoncorsair.h"
 
+// Encoder resolutions
+&left_encoder   { resolution = <2>; };
+&right_encoder  { resolution = <2>; };
+
 &lt {
     tapping-term-ms = <250>;
     flavor = "tap-preferred";

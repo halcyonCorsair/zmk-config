@@ -38,3 +38,7 @@
 #define X_EQUAL RGUI    EQUAL
 #define X_UNDER LALT    UNDER
 #define X_ASTRK RCTRL   ASTRK
+
+#define MEH     LC(LA(LSHFT))
+#define SPOTLT  LG(SPACE)
+#define OPASS   LA(RG(BSLH))

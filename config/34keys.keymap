@@ -53,6 +53,15 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        qhm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "QUICK_HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
         ss: sticky_shift {
             compatible = "zmk,behavior-hold-tap";
             label = "STICKY_SHIFT";
@@ -74,7 +83,7 @@
         base_layer {
                         bindings = <
     &kp Q       &kp W       &kp F       &kp P       &kp B              &kp J       &kp L       &kp U       &kp Y       &kp SQT
-    &hm X_A     &hm X_R     &hm X_S     &hm X_T     &kp G              &kp M       &hm X_N     &hm X_E     &hm X_I     &hm X_O
+    &hm X_A     &hm X_R     &hm X_S     &qhm X_T    &kp G              &kp M       &qhm X_N    &hm X_E     &hm X_I     &hm X_O
     &kp Z       &kp X       &kp C       &kp D       &kp V              &kp K       &kp H       &kp COMMA   &kp DOT     &kp FSLH
                                         &lt NAV_SPC &kp BSPC           &ss LSHIFT LSHIFT &lt SYM_ENT
                         >;

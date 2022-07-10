@@ -35,6 +35,14 @@
 
 / {
     behaviors {
+        skq: sticky_key_quick_release {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKY_KEY_QUICK_RELEASE";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <1000>;
+            quick-release;
+        };
         bhm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -62,6 +70,13 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        tdss: tap_dance_smart_shift {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_SMART_SHIFT";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&sk LSHIFT>, <&caps_word>;
+        };
         ss: sticky_shift {
             compatible = "zmk,behavior-hold-tap";
             label = "STICKY_SHIFT";
@@ -70,6 +85,20 @@
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&sk>;
+        };
+		tdn: tap_dance_navi {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_NAVI";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo _NAVI>, <&tog _NAVI>;
+        };
+		tds: tap_dance_symb {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_SYMB";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo _SYMB>, <&tog _SYMB>;
         };
     };
 
@@ -83,17 +112,17 @@
         base_layer {
                         bindings = <
     &kp Q       &kp W       &kp F       &kp P       &kp B              &kp J       &kp L       &kp U       &kp Y       &kp SQT
-    &hm X_A     &hm X_R     &hm X_S     &qhm X_T    &kp G              &kp M       &qhm X_N    &hm X_E     &hm X_I     &hm X_O
+    &kp A       &kp R       &kp S       &kp T       &kp G              &kp M       &kp N       &kp E       &kp I       &kp O
     &kp Z       &kp X       &kp C       &kp D       &kp V              &kp K       &kp H       &kp COMMA   &kp DOT     &kp FSLH
-                                        &lt NAV_SPC &kp BSPC           &ss LSHIFT LSHIFT &lt SYM_ENT
+                                        &lt NAV_SPC &kp BSPC           &tdss       &lt SYM_ENT
                         >;
                 };
         symbol_layer {
                         bindings = <
     &kp N4      &kp N3      &kp N2      &kp N1      &kp N5              &kp N9       &kp N0      &kp N6      &kp N7      &kp N8
-    &hm X_DLLR  &hm X_PLUS  &hm X_LPAR  &hm X_RPAR  &kp BSLH            &kp PIPE     &hm X_MINUS &hm X_EQUAL &hm X_UNDER &hm X_ASTRK
+    &hm DLLR    &hm PLUS    &hm LPAR    &hm RPAR    &kp BSLH            &kp PIPE     &hm LSFT    &hm LGUI    &hm LALT    &hm LCTRL
     &kp EXCL    &kp SEMI    &kp LBRC    &kp RBRC    &kp TILDE           &kp AMPS     &kp LBKT    &kp RBKT    &kp PERCENT &kp CARET
-                                        &tog _NAVI  &trans              &trans       &trans
+                                        &mo _SYST   &trans              &trans       &trans
                         >;
     // available due to combo: +, -, @, [, ]
     // need to find space for: \, ', "
@@ -102,8 +131,8 @@
                         bindings = <
     &none       &none       &sl _FUNC   &none       &none              &kp PG_UP     &kp LG(LEFT) &kp UP      &kp LG(RIGHT) &kp C_VOL_UP
     &kp LCTRL   &kp LALT    &kp LGUI    &kp LSHFT   &kp X_SELA         &kp PG_DN     &kp LEFT     &kp DOWN    &kp RIGHT   &kp C_VOL_DN
-    &kp X_UNDO  &kp X_CUT   &kp X_COPY  &kp X_PAST  &kp X_REDO         &key_repeat   &kp C_PREV   &kp C_PP    &kp C_NEXT  &kp C_MUTE
-                                        &trans      &trans             &kp TAB       &trans
+    &kp X_UNDO  &kp X_CUT   &kp X_COPY  &kp X_PAST  &kp X_REDO         &kp ESC       &kp C_PREV   &kp C_PP    &kp C_NEXT  &kp C_MUTE
+                                        &trans      &trans             &kp TAB       &mo _SYST
                         >;
                 };
         function_layer {

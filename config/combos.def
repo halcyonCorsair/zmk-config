@@ -18,8 +18,8 @@ compatible = "zmk,combos";
   };
 
 /* Brackets */
-COMBO(lbrk, &kp LBKT,  1  3, 30, _BASE _SYMB)
-COMBO(rbrk, &kp RBKT,  6  8, 30, _BASE _SYMB)
+COMBO(lbrk, &kp LBKT,  1  3, 25, _BASE _SYMB)
+COMBO(rbrk, &kp RBKT,  6  8, 25, _BASE _SYMB)
 COMBO(lbrc, &kp LBRC,  1 12, 30, _BASE _SYMB)
 COMBO(rbrc, &kp RBRC, 17  8, 30, _BASE _SYMB)
 COMBO(lpar, &kp LPAR,  1 13, 30, _BASE _SYMB)
@@ -38,7 +38,7 @@ COMBO(unds, &kp UNDER,  26 27 28,    30, _BASE)
 COMBO(scln, &kp SEMI,   17 27,       30, _BASE)
 COMBO(coln, &kp COLON,   7  8,       30, _BASE)
 COMBO(bsls, &kp BSLH,   17 28,       30, _BASE)
-COMBO(fsls, &kp FSLH,   26 17,       30, _BASE)
+COMBO(fsls, &kp FSLH,   26 17,       25, _BASE)
 COMBO(pipe, &kp PIPE,   16 26,       30, _BASE)
 COMBO(grav, &kp GRAVE,  12 23,       30, _BASE)
 COMBO(tild, &kp TILDE,  11 22,       30, _BASE)

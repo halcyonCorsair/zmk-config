@@ -120,16 +120,17 @@
         symbol_layer {
                         bindings = <
     &kp N1      &kp N2      &kp N3      &kp N4      &kp N5              &kp N6       &kp N7      &kp N8      &kp N9      &kp N0
-    &kp DLLR    &none       &kp LPAR    &kp RPAR    &kp BSLH            &kp PIPE     &kp LSFT    &kp LGUI    &kp LALT    &kp LCTRL
+    &kp DLLR    &none       &kp LPAR    &kp RPAR    &kp BSLH            &kp PIPE     &sk LSFT    &sk LGUI    &sk LALT    &sk LCTRL
     &kp EXCL    &kp SQT     &kp LBRC    &kp RBRC    &kp TILDE           &kp AMPS     &kp LBKT    &kp RBKT    &kp PERCENT &kp CARET
                                         &mo _SYST   &trans              &trans       &trans
                         >;
     // need to find space for: <, >
+    // Put extra symbols on FUNC, or SYST?
                 };
         nav_layer {
                         bindings = <
     &none       &none       &sl _FUNC   &none       &none              &kp PG_UP     &kp LG(LEFT) &kp UP      &kp LG(RIGHT) &kp C_VOL_UP
-    &kp LCTRL   &kp LALT    &kp LGUI    &kp LSHFT   &kp X_SELA         &kp PG_DN     &kp LEFT     &kp DOWN    &kp RIGHT   &kp C_VOL_DN
+    &sk LCTRL   &sk LALT    &sk LGUI    &sk LSHFT   &kp X_SELA         &kp PG_DN     &kp LEFT     &kp DOWN    &kp RIGHT   &kp C_VOL_DN
     &kp X_UNDO  &kp X_CUT   &kp X_COPY  &kp X_PAST  &kp X_REDO         &kp ESC       &kp C_PREV   &kp C_PP    &kp C_NEXT  &kp C_MUTE
                                         &trans      &trans             &kp TAB       &mo _SYST
                         >;
@@ -146,7 +147,7 @@
                         bindings = <
     &bootloader     &reset          &out OUT_USB    &out OUT_BLE    &none              &none        &out OUT_BLE    &out OUT_USB    &reset          &bootloader
     &none           &none           &none           &none           &none              &none        &none           &none           &none           &none
-    &none           &bt BT_SEL 2    &bt BT_SEL 1    &bt BT_SEL 0    &bt BT_CLR         &bt BT_CLR   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &none
+    &bt BT_SEL 2    &bt BT_SEL 1    &bt BT_SEL 0    &none           &bt BT_CLR         &bt BT_CLR   &none           &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2
                                                     &trans          &trans             &trans       &trans
                         >;
                 };

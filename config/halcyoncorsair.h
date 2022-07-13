@@ -28,6 +28,16 @@
 #define X_I LALT    I
 #define X_O RCTRL   O
 
+#define QX_A    LCTRL   A
+#define QX_S    LALT    S
+#define QX_D    LGUI    D
+#define QX_F    LSHFT   F
+
+#define QX_J    RSHFT   J
+#define QX_K    RGUI    K
+#define QX_L    LALT    L
+#define QX_SEMI RCTRL   SEMI
+
 #define X_DLLR LCTRL    DLLR
 #define X_PLUS LALT     PLUS
 #define X_SQT  LALT     SQT

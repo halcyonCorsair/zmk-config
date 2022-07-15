@@ -22,19 +22,3 @@ COMBO(pipe, &kp PIPE,   16 26,       30, _BASE)
 COMBO(grav, &kp GRAVE,  12 23,       30, _BASE)
 COMBO(tild, &kp TILDE,  11 22,       30, _BASE)
 COMBO(ampr, &kp AMPS,    2 13,       30, _BASE)
-
-/* Editing */
-COMBO(cut,   &kp LG(X),     21 23, 30, _BASE)
-COMBO(copy,  &kp LG(C),     21 22, 30, _BASE)
-COMBO(paste, &kp LG(V),     22 23, 30, _BASE)
-COMBO(ptxt,  &kp LG(LS(V)), 23 24, 30, _BASE)
-
-/* System */
-COMBO(entr,     &kp ENTER,  13 24, 30, _BASE)
-COMBO(tab,      &kp TAB,     0  1, 50, _BASE)
-COMBO(esc,      &kp ESC,     4  5, 50, _BASE)
-COMBO(del,      &kp DELETE, 24 25, 50, _BASE)
-COMBO(caps,     &kp CAPS,   14 15, 50, _BASE)
-COMBO(syst,     &sl _SYST,  20 29, 50, _BASE _SYST)
-COMBO(systleft, &sl _SYST,   0  4, 50, _BASE _SYST)
-COMBO(systrght, &sl _SYST,   5  9, 50, _BASE _SYST)

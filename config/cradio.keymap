@@ -68,6 +68,14 @@
     };
 
     combos {
+/*                KEY POSITIONS
+
+  ╭────────────────────╮ ╭────────────────────╮
+  │  0   1   2   3   4 │ │  5   6   7   8   9 │
+  │ 10  11  12  13  14 │ │ 15  16  17  18  19 │
+  │ 20  21  22  23  24 │ │ 25  26  27  28  29 │
+  ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
+              ╰────────╯ ╰────────╯            */
         #include "combos.def"
         combo_lt {
             bindings = <&kp LT>;
@@ -129,9 +137,78 @@
             timeout-ms = <30>;
             layers = <0>;
         };
+
+        combo_cut {
+            bindings = <&kp LG(X)>;
+            key-positions = <21 23>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+        combo_copy {
+            bindings = <&kp LG(C)>;
+            key-positions = <21 22>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+        combo_paste {
+            bindings = <&kp LG(V)>;
+            key-positions = <22 23>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+        combo_ptxt {
+            bindings = <&kp LG(LS(V))>;
+            key-positions = <23 24>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        combo_caps {
+            bindings = <&kp CAPS>;
+            key-positions = <14 15>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
         combo_capsword {
             bindings = <&caps_word>;
             key-positions = <13 16>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <13 24>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+        combo_tab {
+            bindings = <&kp TAB>;
+            key-positions = <0 1>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+        combo_esc {
+            bindings = <&kp ESC>;
+            key-positions = <4 5>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
+        combo_syst {
+            bindings = <&sl _SYST>;
+            key-positions = <20 29>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+        combo_systleft {
+            bindings = <&sl _SYST>;
+            key-positions = <0 4>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+        combo_systright {
+            bindings = <&sl _SYST>;
+            key-positions = <5 9>;
             timeout-ms = <50>;
             layers = <0>;
         };

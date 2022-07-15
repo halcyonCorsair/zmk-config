@@ -70,64 +70,64 @@
     combos {
         #include "combos.def"
         combo_lt {
-            bindings = &kp LT;
-            key-positions = 16  7;
-            timeout-ms = 30;
-            layers = _BASE;
+            bindings = <&kp LT>;
+            key-positions = <16  7>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
         combo_gt {
-            bindings = &kp GT;
-            key-positions = 7 18;
-            timeout-ms = 30;
-            layers = _BASE;
+            bindings = <&kp GT>;
+            key-positions = <7 18>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
         combo_plus {
-            bindings = &kp PLUS;
-            key-positions = 26 27;
-            timeout-ms = 30;
-            layers = _BASE;
+            bindings = <&kp PLUS>;
+            key-positions = <26 27>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
         combo_minus {
-            bindings = &kp MINUS;
-            key-positions = 27 28;
-            timeout-ms = 30;
-            layers = _BASE;
+            bindings = <&kp MINUS>;
+            key-positions = <27 28>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
         combo_equal {
-            bindings = &kp EQUAL;
-            key-positions = 26 28;
-            timeout-ms = 30;
-            layers = _BASE;
+            bindings = <&kp EQUAL>;
+            key-positions = <26 28>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
         combo_under {
-            bindings = &kp UNDER;
-            key-positions = 26 27 28;
-            timeout-ms = 30;
-            layers = _BASE;
+            bindings = <&kp UNDER>;
+            key-positions = <26 27 28>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
         combo_colon {
-            bindings = &kp COLON;
-            key-positions = 7  8;
-            timeout-ms = 30;
-            layers = _BASE;
+            bindings = <&kp COLON>;
+            key-positions = <7 8>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
         combo_at {
-            bindings = &kp AT;
-            key-positions = 1  2;
-            timeout-ms = 30;
-            layers = _BASE;
+            bindings = <&kp AT>;
+            key-positions = <1 2>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
         combo_astr {
-            bindings = &kp STAR;
-            key-positions = 6  7;
-            timeout-ms = 30;
-            layers = _BASE;
+            bindings = <&kp STAR>;
+            key-positions = <6 7>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
         combo_hash {
-            bindings = &kp HASH;
-            key-positions = 2  3;
-            timeout-ms = 30;
-            layers = _BASE;
+            bindings = <&kp HASH>;
+            key-positions = <2 3>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
     };
 

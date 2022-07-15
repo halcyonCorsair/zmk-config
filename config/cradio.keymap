@@ -129,6 +129,12 @@
             timeout-ms = <30>;
             layers = <0>;
         };
+        combo_capsword {
+            bindings = <&capswrd>;
+            key-positions = <13 16>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
     };
 
     keymap {

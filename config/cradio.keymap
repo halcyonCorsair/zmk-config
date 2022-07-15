@@ -16,9 +16,6 @@
 #define _FUNC 3
 #define _SYST 4
 
-#define NAV_SPC _NAVI SPACE
-#define SYM_ENT _SYMB ENTER
-
 #define X_SELA      LG(A)
 #define X_UNDO      LG(Z)
 #define X_CUT       LG(X)
@@ -79,6 +76,66 @@
 
     combos {
         #include "combos.def"
+        combo_lt {
+            bindings = &kp LT;
+            key-positions = 16  7;
+            timeout-ms = 30;
+            layers = _BASE;
+        };
+        combo_gt {
+            bindings = &kp GT;
+            key-positions = 7 18;
+            timeout-ms = 30;
+            layers = _BASE;
+        };
+        combo_plus {
+            bindings = &kp PLUS;
+            key-positions = 26 27;
+            timeout-ms = 30;
+            layers = _BASE;
+        };
+        combo_minus {
+            bindings = &kp MINUS;
+            key-positions = 27 28;
+            timeout-ms = 30;
+            layers = _BASE;
+        };
+        combo_equal {
+            bindings = &kp EQUAL;
+            key-positions = 26 28;
+            timeout-ms = 30;
+            layers = _BASE;
+        };
+        combo_under {
+            bindings = &kp UNDER;
+            key-positions = 26 27 28;
+            timeout-ms = 30;
+            layers = _BASE;
+        };
+        combo_colon {
+            bindings = &kp COLON;
+            key-positions = 7  8;
+            timeout-ms = 30;
+            layers = _BASE;
+        };
+        combo_at {
+            bindings = &kp AT;
+            key-positions = 1  2;
+            timeout-ms = 30;
+            layers = _BASE;
+        };
+        combo_astr {
+            bindings = &kp STAR;
+            key-positions = 6  7;
+            timeout-ms = 30;
+            layers = _BASE;
+        };
+        combo_hash {
+            bindings = &kp HASH;
+            key-positions = 2  3;
+            timeout-ms = 30;
+            layers = _BASE;
+        };
     };
 
     keymap {
@@ -89,7 +146,7 @@
     &kp Q       &kp W       &kp E       &kp R       &kp T              &kp Y       &kp U       &kp I       &kp O       &kp P
     &hm LCTRL A   &hm LALT S   &hm LGUI D   &hm LSHFT F   &kp G              &kp H       &hm RSHFT J   &hm RGUI K   &hm LALT L   &hm RCTRL SEMI
     &kp Z       &kp X       &kp C       &kp V       &kp B              &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH
-                                        &lt NAV_SPC &kp BSPC           &tdss       &lt SYM_ENT
+                                        &lt _NAVI SPACE &kp BSPC           &tdss       &lt _SYMB ENTER
                         >;
                 };
         symbol_layer {

@@ -16,13 +16,6 @@
 #define _FUNC 3
 #define _SYST 4
 
-#define X_SELA      LG(A)
-#define X_UNDO      LG(Z)
-#define X_CUT       LG(X)
-#define X_COPY      LG(C)
-#define X_PAST      LG(V)
-#define X_REDO      LG(LS(Z))
-
 &lt {
     tapping-term-ms = <250>;
     flavor = "tap-preferred";
@@ -160,8 +153,8 @@
         nav_layer {
                         bindings = <
     &kp TILDE   &kp GRAVE   &none       &none       &sl _SYST          &kp PG_UP     &kp LG(LEFT) &kp UP      &kp LG(RIGHT) &kp C_VOL_UP
-    &sk LCTRL   &sk LALT    &sk LGUI    &sk LSHFT   &kp X_SELA         &kp PG_DN     &kp LEFT     &kp DOWN    &kp RIGHT   &kp C_VOL_DN
-    &kp X_UNDO  &kp X_CUT   &kp X_COPY  &kp X_PAST  &kp X_REDO         &kp ESC       &kp C_PREV   &kp C_PP    &kp C_NEXT  &kp C_MUTE
+    &sk LCTRL   &sk LALT    &sk LGUI    &sk LSHFT   &kp LG(A)          &kp PG_DN     &kp LEFT     &kp DOWN    &kp RIGHT   &kp C_VOL_DN
+    &kp LG(Z)   &kp LG(X)   &kp LG(C)   &kp LG(V)   &kp LG(LS(Z))      &kp ESC       &kp C_PREV   &kp C_PP    &kp C_NEXT  &kp C_MUTE
                                         &trans      &trans             &kp TAB       &mo _FUNC
                         >;
                 };

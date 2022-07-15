@@ -1,1 +1,149 @@
-#include "34keys.keymap"
+/*
+ * Copyright (c) 2021 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/ext_power.h>
+
+#define _BASE 0
+#define _SYMB 1
+#define _NAVI 2
+#define _FUNC 3
+#define _SYST 4
+
+#define NAV_SPC _NAVI SPACE
+#define SYM_ENT _SYMB ENTER
+
+#define X_SELA      LG(A)
+#define X_UNDO      LG(Z)
+#define X_CUT       LG(X)
+#define X_COPY      LG(C)
+#define X_PAST      LG(V)
+#define X_REDO      LG(LS(Z))
+
+#define CTL_A    LCTRL   A
+#define ALT_S    LALT    S
+#define GUI_D    LGUI    D
+#define SFT_F    LSHFT   F
+
+#define SFT_J    RSHFT   J
+#define GUI_K    RGUI    K
+#define ALT_L    LALT    L
+#define CTL_SEMI RCTRL   SEMI
+
+#define X_DLLR LCTRL    DLLR
+#define X_PLUS LALT     PLUS
+#define X_SQT  LALT     SQT
+#define X_LPAR LGUI     LPAR
+#define X_RPAR LSHFT    RPAR
+
+#define X_MINUS RSHFT   MINUS
+#define X_EQUAL RGUI    EQUAL
+#define X_UNDER LALT    UNDER
+#define X_ASTRK RCTRL   ASTRK
+
+&lt {
+    tapping-term-ms = <250>;
+    flavor = "tap-preferred";
+};
+
+&mt {
+    tapping-term-ms = <200>;
+};
+
+&sk {
+     release-after-ms = <1000>;
+     quick-release;
+};
+
+&sl {
+    /delete-property/ quick-release;
+};
+
+&caps_word {
+    continue-list = <UNDERSCORE MINUS PIPE>; // BSPC
+};
+
+/ {
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+        qhm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "QUICK_HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+        tdss: tap_dance_smart_shift {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_SMART_SHIFT";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&sk LSHIFT>, <&caps_word>;
+        };
+    };
+
+    combos {
+        #include "combos.def"
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        base_layer {
+                        bindings = <
+    &kp Q       &kp W       &kp E       &kp R       &kp T              &kp Y       &kp U       &kp I       &kp O       &kp P
+    &hm CTL_A   &hm ALT_S   &hm GUI_D   &hm SFT_F   &kp G              &kp H       &hm SFT_J   &hm GUI_K   &hm ALT_L   &hm CTL_SEMI
+    &kp Z       &kp X       &kp C       &kp V       &kp B              &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH
+                                        &lt NAV_SPC &kp BSPC           &tdss       &lt SYM_ENT
+                        >;
+                };
+        symbol_layer {
+                        bindings = <
+    &kp N1      &kp N2      &kp N3      &kp N4      &kp N5              &kp N6       &kp N7      &kp N8      &kp N9      &kp N0
+    &hm X_DLLR  &hm X_PLUS  &hm X_LPAR  &hm X_RPAR  &kp BSLH            &kp PIPE     &hm X_MINUS &hm X_EQUAL &hm X_UNDER &hm X_ASTRK
+    &kp EXCL    &kp SQT     &kp LBRC    &kp RBRC    &kp TILDE           &kp AMPS     &kp LBKT    &kp RBKT    &kp PERCENT &kp CARET
+                                        &mo _FUNC   &trans              &trans       &trans
+                        >;
+                };
+        nav_layer {
+                        bindings = <
+    &kp TILDE   &kp GRAVE   &none       &none       &sl _SYST          &kp PG_UP     &kp LG(LEFT) &kp UP      &kp LG(RIGHT) &kp C_VOL_UP
+    &sk LCTRL   &sk LALT    &sk LGUI    &sk LSHFT   &kp X_SELA         &kp PG_DN     &kp LEFT     &kp DOWN    &kp RIGHT   &kp C_VOL_DN
+    &kp X_UNDO  &kp X_CUT   &kp X_COPY  &kp X_PAST  &kp X_REDO         &kp ESC       &kp C_PREV   &kp C_PP    &kp C_NEXT  &kp C_MUTE
+                                        &trans      &trans             &kp TAB       &mo _FUNC
+                        >;
+                };
+        function_layer {
+                        bindings = <
+        &kp F1      &kp F2      &kp F3      &kp F4      &kp F5             &kp F6      &kp F7      &kp F8      &kp F9      &kp F10
+        &kp LCTRL   &kp LALT    &kp LGUI    &kp LSHFT   &none              &none       &kp AT      &kp HASH    &kp COLON   &kp BSLH
+        &none       &kp F12     &kp F13     &none       &trans             &kp F11     &kp LT      &kp GT      &kp F14     &kp F15
+                                            &trans      &trans             &trans      &trans
+                        >;
+                };
+        system_layer {
+                        bindings = <
+    &bootloader     &reset          &out OUT_USB    &out OUT_BLE    &none              &none        &out OUT_BLE    &out OUT_USB    &reset          &bootloader
+    &none           &none           &none           &none           &none              &none        &none           &none           &none           &none
+    &none           &bt BT_SEL 2    &bt BT_SEL 1    &bt BT_SEL 0    &bt BT_CLR         &bt BT_CLR   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &none
+                                                    &trans          &trans             &trans       &trans
+                        >;
+                };
+        };
+};

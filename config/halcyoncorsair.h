@@ -18,16 +18,6 @@
 #define X_PAST      LG(V)
 #define X_REDO      LG(LS(Z))
 
-#define X_A LCTRL   A
-#define X_R LALT    R
-#define X_S LGUI    S
-#define X_T LSHFT   T
-
-#define X_N RSHFT   N
-#define X_E RGUI    E
-#define X_I LALT    I
-#define X_O RCTRL   O
-
 #define QX_A    LCTRL   A
 #define QX_S    LALT    S
 #define QX_D    LGUI    D

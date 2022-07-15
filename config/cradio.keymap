@@ -142,25 +142,25 @@
 
         base_layer {
                         bindings = <
-    &kp Q       &kp W       &kp E       &kp R       &kp T              &kp Y       &kp U       &kp I       &kp O       &kp P
-    &hm LCTRL A   &hm LALT S   &hm LGUI D   &hm LSHFT F   &kp G              &kp H       &hm RSHFT J   &hm RGUI K   &hm LALT L   &hm RCTRL SEMI
-    &kp Z       &kp X       &kp C       &kp V       &kp B              &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH
-                                        &lt _NAVI SPACE &kp BSPC           &tdss       &lt _SYMB ENTER
+    &kp Q        &kp W       &kp E       &kp R        &kp T              &kp Y       &kp U        &kp I       &kp O       &kp P
+    &hm LCTRL A  &hm LALT S  &hm LGUI D  &hm LSHFT F  &kp G              &kp H       &hm RSHFT J  &hm RGUI K  &hm LALT L  &hm RCTRL SEMI
+    &kp Z        &kp X       &kp C       &kp V        &kp B              &kp N       &kp M        &kp COMMA   &kp DOT     &kp FSLH
+                                         &lt _NAVI SPACE &kp BSPC        &tdss       &lt _SYMB ENTER
                         >;
                 };
         symbol_layer {
                         bindings = <
-    &kp N1      &kp N2      &kp N3      &kp N4      &kp N5              &kp N6       &kp N7      &kp N8      &kp N9      &kp N0
-    &hm LCTRL DLLR  &hm LALT PLUS  &hm LGUI LPAR  &hm LSHFT RPAR  &kp BSLH            &kp PIPE     &hm RSHFT MINUS &hm RGUI EQUAL &hm LALT UNDER &hm RCTRL ASTRK
-    &kp EXCL    &kp SQT     &kp LBRC    &kp RBRC    &kp TILDE           &kp AMPS     &kp LBKT    &kp RBKT    &kp PERCENT &kp CARET
-                                        &mo _FUNC   &trans              &trans       &trans
+    &kp N1          &kp N2         &kp N3         &kp N4          &kp N5              &kp N6       &kp N7           &kp N8          &kp N9          &kp N0
+    &hm LCTRL DLLR  &hm LALT PLUS  &hm LGUI LPAR  &hm LSHFT RPAR  &kp BSLH            &kp PIPE     &hm RSHFT MINUS  &hm RGUI EQUAL  &hm LALT UNDER  &hm RCTRL ASTRK
+    &kp EXCL        &kp SQT        &kp LBRC       &kp RBRC        &kp TILDE           &kp AMPS     &kp LBKT         &kp RBKT        &kp PERCENT     &kp CARET
+                                                  &mo _FUNC       &trans              &trans       &trans
                         >;
                 };
         nav_layer {
                         bindings = <
-    &kp TILDE   &kp GRAVE   &none       &none       &sl _SYST          &kp PG_UP     &kp LG(LEFT) &kp UP      &kp LG(RIGHT) &kp C_VOL_UP
-    &sk LCTRL   &sk LALT    &sk LGUI    &sk LSHFT   &kp LG(A)          &kp PG_DN     &kp LEFT     &kp DOWN    &kp RIGHT   &kp C_VOL_DN
-    &kp LG(Z)   &kp LG(X)   &kp LG(C)   &kp LG(V)   &kp LG(LS(Z))      &kp ESC       &kp C_PREV   &kp C_PP    &kp C_NEXT  &kp C_MUTE
+    &kp TILDE   &kp GRAVE   &none       &none       &sl _SYST          &kp PG_UP     &kp LG(LEFT)  &kp UP      &kp LG(RIGHT)  &kp C_VOL_UP
+    &sk LCTRL   &sk LALT    &sk LGUI    &sk LSHFT   &kp LG(A)          &kp PG_DN     &kp LEFT      &kp DOWN    &kp RIGHT      &kp C_VOL_DN
+    &kp LG(Z)   &kp LG(X)   &kp LG(C)   &kp LG(V)   &kp LG(LS(Z))      &kp ESC       &kp C_PREV    &kp C_PP    &kp C_NEXT     &kp C_MUTE
                                         &trans      &trans             &kp TAB       &mo _FUNC
                         >;
                 };

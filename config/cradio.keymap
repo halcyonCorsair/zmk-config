@@ -26,27 +26,6 @@
 #define X_PAST      LG(V)
 #define X_REDO      LG(LS(Z))
 
-#define CTL_A    LCTRL   A
-#define ALT_S    LALT    S
-#define GUI_D    LGUI    D
-#define SFT_F    LSHFT   F
-
-#define SFT_J    RSHFT   J
-#define GUI_K    RGUI    K
-#define ALT_L    LALT    L
-#define CTL_SEMI RCTRL   SEMI
-
-#define X_DLLR LCTRL    DLLR
-#define X_PLUS LALT     PLUS
-#define X_SQT  LALT     SQT
-#define X_LPAR LGUI     LPAR
-#define X_RPAR LSHFT    RPAR
-
-#define X_MINUS RSHFT   MINUS
-#define X_EQUAL RGUI    EQUAL
-#define X_UNDER LALT    UNDER
-#define X_ASTRK RCTRL   ASTRK
-
 &lt {
     tapping-term-ms = <250>;
     flavor = "tap-preferred";
@@ -108,7 +87,7 @@
         base_layer {
                         bindings = <
     &kp Q       &kp W       &kp E       &kp R       &kp T              &kp Y       &kp U       &kp I       &kp O       &kp P
-    &hm CTL_A   &hm ALT_S   &hm GUI_D   &hm SFT_F   &kp G              &kp H       &hm SFT_J   &hm GUI_K   &hm ALT_L   &hm CTL_SEMI
+    &hm LCTRL A   &hm LALT S   &hm LGUI D   &hm LSHFT F   &kp G              &kp H       &hm RSHFT J   &hm RGUI K   &hm LALT L   &hm RCTRL SEMI
     &kp Z       &kp X       &kp C       &kp V       &kp B              &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH
                                         &lt NAV_SPC &kp BSPC           &tdss       &lt SYM_ENT
                         >;
@@ -116,7 +95,7 @@
         symbol_layer {
                         bindings = <
     &kp N1      &kp N2      &kp N3      &kp N4      &kp N5              &kp N6       &kp N7      &kp N8      &kp N9      &kp N0
-    &hm X_DLLR  &hm X_PLUS  &hm X_LPAR  &hm X_RPAR  &kp BSLH            &kp PIPE     &hm X_MINUS &hm X_EQUAL &hm X_UNDER &hm X_ASTRK
+    &hm LCTRL DLLR  &hm LALT PLUS  &hm LGUI LPAR  &hm LSHFT RPAR  &kp BSLH            &kp PIPE     &hm RSHFT MINUS &hm RGUI EQUAL &hm LALT UNDER &hm RCTRL ASTRK
     &kp EXCL    &kp SQT     &kp LBRC    &kp RBRC    &kp TILDE           &kp AMPS     &kp LBKT    &kp RBKT    &kp PERCENT &kp CARET
                                         &mo _FUNC   &trans              &trans       &trans
                         >;

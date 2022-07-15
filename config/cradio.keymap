@@ -137,6 +137,12 @@
             timeout-ms = <30>;
             layers = <0>;
         };
+        combo_backslash {
+            bindings = <&kp BSLH>;
+            key-positions = <17 28>;
+            timeout-ms = <30>;
+            layers = <0>;
+        };
 
         combo_cut {
             bindings = <&kp LG(X)>;

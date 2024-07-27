@@ -53,7 +53,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        qhm: homerow_mods {
+        qhm: quick_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "QUICK_HOMEROW_MODS";
             #binding-cells = <2>;
